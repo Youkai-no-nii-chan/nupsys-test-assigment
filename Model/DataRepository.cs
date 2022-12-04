@@ -10,7 +10,7 @@ public class DataRepository
     {
         var dbClient = new MongoClient("mongodb://localhost:27017");
 
-        var database = dbClient.GetDatabase ("nupsys-test");
+        var database = dbClient.GetDatabase("nupsys-test");
         _collection = database.GetCollection<Data> ("data");
     }
 
